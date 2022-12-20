@@ -26,3 +26,14 @@ a {
 	color: currentColor;
 }
 
+main{
+    background-color: ;
+}
+
+
+body{
+	height: 100vh;
+	/* in caso uscisse da body usiamo overflow per scegliere opzioni contenuto. */
+	overflow: hidden;
+	background-color: aquamarine;
+}
