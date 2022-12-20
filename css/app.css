@@ -15,6 +15,10 @@ img {
 	max-width: 100%;
 }
 
+button, input{
+
+}
+
 ul,
 ol,
 menu {
@@ -60,8 +64,27 @@ body > * {
 }
 
 .toolbar__item{
-	padding: 10px;
+	padding: 14px;
+	flex-shrink: 0;
+	color: aliceblue;
 }
 
+.toolbar__item.button{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	gap: 16px;
+}
+.toolbar__item.button .button__icon{
+	display: block;
+}
+.toolbar__item.button .button__icon{
+	font-size: 30px;
+	margin-bottom: 12px;
+}
+
+.end-meeting-button{
+	
+}
 
 
