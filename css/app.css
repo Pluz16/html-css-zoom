@@ -26,9 +26,6 @@ a {
 	color: currentColor;
 }
 
-main{
-    background-color: ;
-}
 
 
 body{
@@ -36,4 +33,24 @@ body{
 	/* in caso uscisse da body usiamo overflow per scegliere opzioni contenuto. */
 	overflow: hidden;
 	background-color: aquamarine;
+	display: flex;
+	flex-direction: column;
 }
+
+.main-content{
+	flex-grow: 1;
+	background-color: black;
+}
+
+
+body > * {
+	border: 2px solid black;
+	padding: 20px;
+}
+
+
+.toolbars{
+	background-color: rgb(12, 13, 27);
+}
+
+
