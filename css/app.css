@@ -1,10 +1,15 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+button,
+input {
+	border: none;
+	background-color: transparent;
 }
 
 html {
@@ -13,10 +18,6 @@ html {
 
 img {
 	max-width: 100%;
-}
-
-button, input{
-
 }
 
 ul,
@@ -30,55 +31,57 @@ a {
 	color: currentColor;
 }
 
-
-
-body{
+body {
 	height: 100vh;
-	/* in caso uscisse da body usiamo overflow per scegliere opzioni contenuto. */
 	overflow: hidden;
-	background-color: aquamarine;
 	display: flex;
 	flex-direction: column;
+	color: white;
 }
-
-.main-content{
-	flex-grow: 1;
-	background-color: black;
-}
-
 
 body > * {
-	border: 2px solid black;
+	/* border: 2px solid black; */
 	/* padding: 20px; */
 }
 
+.main-content {
+	flex-grow: 1;
+	background-color: black;
+	padding: 50px;
+}
 
-.toolbars{
-	background-color: rgb(12, 13, 27);
+.toolbars {
+	background-color: #222222;
 	display: flex;
 	justify-content: space-between;
 }
 
-.toolbar{
+.toolbar {
 	display: flex;
 }
 
-.toolbar__item{
+.toolbar__item {
 	padding: 14px;
 	flex-shrink: 0;
-	color: aliceblue;
 }
 
-.toolbar__item.button{
+.toolbar__item.button {
 	display: flex;
 	align-items: center;
-	text-align: center;
 	gap: 16px;
+	text-align: center;
+	transition: color 900ms cubic-bezier(0.07, 1.05, 0.81, 0.08) 1s;
 }
-.toolbar__item.button .button__icon{
+
+.toolbar__item.button:hover {
+	color: greenyellow;
+}
+
+.toolbar__item.button .button__text {
 	display: block;
 }
-.toolbar__item.button .button__icon{
+
+.toolbar__item.button .button__icon {
 	font-size: 30px;
 	margin-bottom: 12px;
 }
@@ -89,6 +92,3 @@ body > * {
 	padding: 0 20px;
 	font-weight: 700;
 }
-
-
-
