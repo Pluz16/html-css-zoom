@@ -83,8 +83,12 @@ body > * {
 	margin-bottom: 12px;
 }
 
-.end-meeting-button{
-	
+.end-meeting-btn {
+	background-color: rgba(255, 255, 255, 0.3);
+	color: red;
+	padding: 0 20px;
+	font-weight: 700;
 }
+
 
 
