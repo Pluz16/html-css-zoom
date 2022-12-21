@@ -109,3 +109,32 @@ body > * {
 	padding: 0 8px;
 }
 
+.video {
+	position: relative;
+	flex-basis: 15%;
+}
+
+.video img {
+	width: 100%;
+	display: block;
+}
+
+.video .user-info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	line-height: 28px;
+	padding: 0 10px;
+	font-size: 12px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.video-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px 10px;
+	justify-content: center;
+	height: 100%;
+	align-content: center;
+}
+
